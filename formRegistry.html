@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Контакты</title>
+</head>
+<div class="header">
+    <a class="iconMenu" id="top" href="index.html">Главная</a>
+    <a class="iconMenu" href="blog.html">Блог</a>
+    <a class="iconMenu" href="contatc.html">Контакты</a>
+    <a class="iconMenu" href="formRegistry.html">Регистрация</a>
+</div>
+
+<body>
+    <div class="center">
+        <form action="#">
+            <h3>Регистрация</h3>
+            Ваше имя <input class="pole" type="text" placeholder="Иван"><br>
+            Пароль <input class="pole" type="password" placeholder="Пароль"><br>
+            Почта <input class="pole" type="email" placeholder="@email"><br>
+            Дата рождения <input class="pole" type="date"><br>
+            Ваши увлечения <br>
+            IT <input class="pole" type="checkbox">
+            <label>Спорт <input class="pole" type="checkbox"></label>
+
+            <label for="sport"></label>
+            Спорт <input class="pole" type="checkbox" id="sport"><br>
+
+            Ваш пол <br>
+            М <input class="pole" type="radio" name="pol" checked><br>
+            <!-- name="pol" синхронизирует и для выбора 1 с одинаковыми атрибутами, 
+            checked принудительный выбор элеманта-->
+            Ж <input class="pole" type="radio" name="pol"><br>
+            <textarea class="pole" name="" id="" cols="30" rows="10"></textarea><br>
+            <button class="button" type="submit">Отправить</button>
+            <button class="button" type="reset">Удалить</button>
+        </form>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <div class="footer_top">
+
+            <div class="footerTopText">
+                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa laudantium harum quia. Alias
+                    assumenda,
+                    autem et facilis sequi fuga. Harum!</span>
+            </div>
+        </div>
+        <hr>
+        <div class="footer_bottom">
+            <span>Lorem ipsum dolor sit amet.</span><br>
+            <a href="tel:+79372400013">Позвоните нам</a><br>
+            <a href="mailto:moo00n@mail.ru">Напишите на почту</a><br>
+            <div class="footerBottomText">
+                <a href="#top">Верх</a>
+                <p>Все права защищены &copy; - Vitaliy Maksimov</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
