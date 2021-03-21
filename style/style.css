@@ -16,7 +16,7 @@ html{
     color: #1F3F68;
 }
 .top{
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 .topContact{
@@ -121,11 +121,7 @@ html{
     border-radius: 10px;
 }
 .iconMenu{
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    padding-top: 42px;    
-    list-style-type: none;
+
 }
 .iconMenuContact{
     padding-bottom: 30px;
@@ -136,7 +132,6 @@ html{
 .centerItemBottom{
     display: flex;    
     justify-content: space-between;
-    margin-top: 32px;
     margin-bottom: 112px;
 
 }
@@ -154,7 +149,15 @@ html{
     box-sizing: border-box;
 }
 .centerItemBox{
+    padding-top: 32px;
+    margin-right: 32px;
     position: relative;
+    flex-grow: 1;
+}
+.centerItemBoxContact{
+    padding-top: 32px;
+    position: relative;
+    flex-grow: 1;
 }
 .centerCardObjectImg2{
     margin-top: 14.03px;
@@ -168,17 +171,29 @@ html{
     margin-left: 94.47px;
     box-sizing: border-box;
 }
-.centerItemBox{
-    position: relative;
-}
 .centerItemText{
     position: absolute;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
     top: 64px;
     right: 64px;
 }
+.centerItemTextBottom{
+    position: absolute;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    top: 32px;
+    left: 32px;
+}
 .headingTopContact{
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 454px;
     bottom: 16px;
     font-weight: 500;
@@ -190,7 +205,7 @@ html{
 }
 .headingTopTextContact{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 180px;
     right: 180px;
     font-size: 20px;
@@ -202,6 +217,7 @@ html{
 .centerItemBottom{
     display: flex;
     position: relative;
+
 }
 .centerItemText1{
     position: absolute;
@@ -252,14 +268,6 @@ html{
 .centerItemImg{
     width: 100%;
 }
-.centerItemImg1{
-    max-width: 554px;
-    max-height: 417px;
-}
-.centerItemImg2{
-    max-width: 554px;
-    max-height: 417px;
-}
 .centerItemText{
     font-size: 32px;
     line-height: 46px;
@@ -276,9 +284,11 @@ html{
     color: #222222;
 }
 .centerBottomText{
-    padding-top: 32px;
+    width: 75%;
+    margin: 32px auto 64px;
     text-align: center;
-    margin-bottom: 64px;
+    letter-spacing: 0.05em;
+    color: #222222;    
 }
 .footer{
     text-align: center;
@@ -371,32 +381,33 @@ html{
     text-align: left;
 }
 .headingTop{
+    max-width: 504px;
     font-weight: 300;
     font-size: 64px;
     line-height: 74px;
     letter-spacing: 0.04em;
     color: #1F3F68;
-    max-width: 510px;
 }
-.headingTop{
-    padding-top: 189px;
-}
-
 .headerBottomFonts{
-    max-height: 684px;
     display: flex;
     justify-content: space-between;
+    max-height: 768px;
+
 }
-header{
-    max-width: 768px;
+.header{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-top: 42px;    
+    list-style-type: none;
+    
 }
 .fontsHeader{
-    padding-right: 87px;
-    padding-bottom: 60px;
-    padding-top: 158px;
-    padding-left: 91px;
+    padding-top: 11%;
 }
+
 .headingTopText{
+    max-width: 425px;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.05em;
@@ -404,7 +415,7 @@ header{
     opacity: 0.6;
     padding-top: 32px;
     flex-wrap: wrap;
-    max-width: 425px;
+
 }
 .topButton{
     font-size: 16px;
@@ -492,5 +503,307 @@ h2{
     color: #FFFFFF;
     text-transform: uppercase;
 }
+.top_box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.headerContent{
+    padding-top: 115px;
+    flex-grow: 1;
+    background-image: url(../img/fontsHeader.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 33%;
+}
 
+@media (max-width: 1024px) {
+    .conteiner{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .top_box{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .headerContent{
+        background-position: right 210px;
+    }
+    .what-we-do{
+        flex-direction: column;
+        align-items: center;
+    }
+    .centerCardObject{
+        margin-bottom: 32px;
+    }
+    .centerItemBottom{
+        flex-direction: column  ;
+    }
+    .what-we-do{
+        padding-top: 32px;
+    }
+    .footerModile{
+        padding-left: 124px;
+        padding-right: 124px;
+    }
+    .footerTopButton{
 
+        margin: 163px 0px 80px 0px;
+        
+    }
+    .headingFooterTop{
+        padding: 47px 0px 32px;
+        margin-top: 0px;
+        width: 336px;
+    }
+    .footerTop{
+        height: 322px;
+    }
+    .footerInfo{
+    align-items: baseline;
+    text-align: left;
+    flex-direction: column;
+    font-size: 14px;
+    }
+    .headingTopContact{
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 74px;
+        
+    }
+    .headingTopTextContact{
+        font-size: 20px;
+        line-height: 30px;
+        left: 18%;
+        width: 520px;
+    }
+
+    .header{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .centerContact{
+        flex-direction: column;
+    }
+    .headingTopContact{
+        left: 40%;
+    }
+    .centerInfoContact{
+        margin: 0 auto;
+    }
+    .centerContact{
+        margin-top: 32px;
+    }
+    .centerFormContact{
+        margin: 0 auto;
+        margin-top: 64px;
+    }
+    .centerMapContact {
+        height: 392px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .centerItemBox{
+        margin-right: 0;
+    }
+    .centerItemBoxContact{
+        margin-right: 0;
+    }
+}
+@media (max-width: 667px) {
+    .top{
+        min-height: 376px;
+    }
+    .conteiner{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header{
+        padding-top: 24px;
+    }
+    .headingTop{
+        width: 100%;
+        text-align: center;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 12px;
+        margin-top: 36px;
+    }
+    .headingTopText{
+        width: 100%;
+        text-align: center;
+    }
+    .headerContent{
+        padding-top: 36px;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .topButton{
+        padding: 0 8px;
+        margin-bottom: 41px;
+        box-sizing: border-box;
+    }
+    .centerItemBottom{
+        flex-direction: column;
+    }
+    .heading{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+    }
+    .miniHeading{
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+    }
+    .centerBottomHeading{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+    }
+    .centerItemText{
+        top: 48px;
+        right: 16px;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+        color: #FFFFFF;
+    }
+    .centerItemTextBottom{
+        top: 48px;
+        left: 16px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+    .centerItemBox{
+        margin-right: 0;
+    }
+    .centerItemBoxContact{
+        margin-right: 0;
+    }
+    .what-we-do{
+        padding-top: 32px;
+    }
+    .centerCardObject{
+        width: 100%;
+    }
+    .centerBottomText {
+        width: 100%;
+        margin: 32px auto 32px;
+    }
+    .footerModile{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .footerTopButton{
+        display: inline-block;
+        margin: 0 auto;       
+    }
+    .headingFooterTop{
+        font-size: 24px;
+        line-height: 28px;
+        padding: 47px 0px 32px;
+        margin-top: 0px;
+        width: 336px;
+    }
+    .footerTop{
+        height: 221px;
+        flex-direction: column;
+    }
+    .footerInfo{
+        align-items: baseline;
+        text-align: left;
+        flex-direction: column;
+        font-size: 14px;
+        line-height: 19px;
+      
+    }
+    .footerTopСontent{
+        text-align: center;
+    }
+    .textFooterTop{
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 10px;
+    }
+    .headingFooterTop{
+        text-align: center;
+        width: fit-content;
+        padding: 18px 0px 32px;
+    }
+    .footerModile{
+        padding: 0;
+    }
+    .footerHr{
+        margin-top: 73px;
+    }
+    .footer{
+        max-width: 532px;
+    }
+    .footerBottom{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .header{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .centerContact{
+        flex-direction: column;
+    }
+    .headingTopContact{
+        font-size: 24px;
+        line-height: 28px;
+        font-size: 18px;
+        line-height: 48px;
+        left: 2%;
+        width: 100%;
+    }
+    .headingTopTextContact{
+        width: 64%;
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .centerInfoContact{
+        margin: 0 auto;
+    }
+    .centerContact{
+        margin-top: 32px;
+    }
+    .centerFormContact{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 64px;
+    }
+    .centerFormContactTextHeader{
+        margin-right: 89px;
+    }
+    .pole{
+        width: 271px;
+    }
+    .button{
+        width: 271px;
+    }
+    .centerMapContact {
+        height: 349px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .centerFormContactText{
+        margin-left: 66px;
+    }
+    .topContact{
+        height: 250px;
+    }
+}
